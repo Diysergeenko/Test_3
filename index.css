@@ -7,55 +7,56 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
-}
-div {
-  display: block;
-}
-html .container {
-  position: relative;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
-.slide.head {
-  position: relative;
-  max-width: none;
-}
-.slide {
-  width: 100%;
-  margin: 0px auto;
-  position: relative;
-}
-.slide.head video {
-  display: block;
-  width: 100%;
-}
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-.slide.head .slide_inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.slide.head .slide_center {
-  padding: 0px 50px;
-}
-.slide_center {
-  position: relative;
-  width: 90%;
-  max-width: 1280px;
-  margin: 0px auto;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+video {
+  /* так всегда будет на весь экран */
+  width: 100vw;
+  height: 100vh;
+
+  /* это свойсто ставит его на весь экран */
+  object-fit: cover;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header {
+  width: 100%;
+  /* вот задаем флекс контейнер */
+  display: flex;
+  /* выравнивем контент в нем по вертикали */
+  align-items: center;
+
+  padding: 0 50px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.header_links {
+  display: flex;
+  /* выравнивем контент в нем по вертикали */
+  align-items: center;
+}
+
+.lang-selector {
+  margin-left: 20px;
+}
+
 .slide_center::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -150,11 +151,6 @@ img {
   line-height: 20px;
 }
 .slide_content {
-  color: rgb(61, 61, 61);
-  position: absolute;
-  top: 340px;
-  margin-top: -184.5px;
-  left: auto;
 }
 .slide.head .slide_main-title {
   margin: 200px;
@@ -167,10 +163,6 @@ img {
   margin-top: 5%;
 }
 .slide_note {
-  position: relative;
-  padding-left: 200px;
-  font-size: 150%;
-  line-height: 1;
 }
 .slide_midnightblue {
   color: rgb(61, 61, 61);

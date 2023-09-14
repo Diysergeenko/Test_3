@@ -5,94 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosmos</title>
     <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 </html>
 <body>
-  <div class="container is-main">
-    <div class="slide head" id="slide_head" style="font-size: 100%">
-      <video autoplay="true" loop="loop" preload="auto" muted>
-        <source
-          src="C:\Users\Diyse\OneDrive\Рабочий стол\Репозитории\Test_3\foggy-mountain-landscape.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="slide_inner">
-        <div class="slide_center">
-          <img
-            src="C:\Users\Diyse\OneDrive\Рабочий стол\Репозитории\Test_3\—Pngtree—black and white minimalist space_4888655.png"
-            class="logo"
-            alt=""
-          />
+  <div class="container">
+    <video autoplay="true" loop="loop" preload="auto" muted>
+      <!-- нужно использовать отсительный путь, прочита про это в инете -->
+      <source src=".\video.mp4" type="video/mp4" />
+    </video>
+    <div class="header">
+      <!-- тоже и с подключенрием к иконке -->
+      <img src=".\icon.png" class="logo" alt="" />
+
+      <div class="header_links">
+        <!-- лучше сначала блок лефт -->
+
+        <ul class="main-menu-top_first-level">
+          <li class="main-menu-top_first-item">
+            <a href="/ru/equipment" class="main-menu-top_first-link">Оборудование</a>
+          </li>
+          <li class="main-menu-top_first-item">
+            <a href="/ru/technologies" class="main-menu-top_first-link">Технологии</a>
+          </li>
+          <li class="main-menu-top_first-item">
+            <a href="/ru/address" class="main-menu-top_first-link">Адрес</a>
+          </li>
+          <li class="main-menu-top_first-item">
+            <a href="/ru/contacts" class="main-menu-top_first-link">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="lang-selector">
+          <span class="lang-selector_item" title="Сайт A-stele">ru</span>
+          <a class="lang-selector_item" href="#en" title="Site  A-stele">en</a>
         </div>
-        <div class="slide_links">
-          <div class="slide_links-right">
-            <div class="slide_lang-selector">
-              <div class="lang-selector">
-                <span class="lang-selector_item" title="Сайт A-stele">ru</span>
-                <a class="lang-selector_item" href="#en" title="Site  A-stele"
-                  >en</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="slide_links-left">
-            <div class="slide_menu">
-              <div class="slide_menu-inner">
-                <img
-                  src="C:\Users\Diyse\OneDrive\Рабочий стол\Репозитории\Test_3\—Pngtree—black and white minimalist space_4888655.png"
-                  class="slide_menu-logo"
-                  alt=""
-                />
-                <div class="main-menu-top">
-                  <div class="main-menu-top_plate">
-                    <ul class="main-menu-top_first-level">
-                      <li class="main-menu-top_first-item">
-                        <a href="/ru/equipment" class="main-menu-top_first-link"
-                          >Оборудование</a
-                        >
-                      </li>
-                      <li class="main-menu-top_first-item">
-                        <a
-                          href="/ru/technologies"
-                          class="main-menu-top_first-link"
-                          >Технологии</a
-                        >
-                      </li>
-                      <li class="main-menu-top_first-item">
-                        <a href="/ru/address" class="main-menu-top_first-link"
-                          >Адрес</a
-                        >
-                      </li>
-                      <li class="main-menu-top_first-item">
-                        <a href="/ru/contacts" class="main-menu-top_first-link"
-                          >Контакты</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="slide_content"
-          style="position: absolute; top: 400px; margin-top: -175px; left: 0px"
-        >
-          <div class="slide_main-title" style="margin-top: 0px">
-            Взгляд
-            <br />
-            на звезды
-          </div>
-          <div class="slide_note">
-            <div class="slide_midnightblue">Взгляд</div>
-            <div class="slide_orange">в новый мир</div>
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="slide_content" style="position: absolute; top: 400px; margin-top: -175px; left: 0px">
+      <div class="slide_main-title" style="margin-top: 0px">
+        Взгляд
+        <br />
+        на звезды
+      </div>
+      <div class="slide_note">
+        <div class="slide_midnightblue">Взгляд</div>
+        <div class="slide_orange">в новый мир</div>
       </div>
     </div>
   </div>
